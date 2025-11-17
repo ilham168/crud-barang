@@ -57,3 +57,149 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# CRUD Barang (Laravel)
+
+![GitHub repo size](https://img.shields.io/github/repo-size/ilham168/crud-barang)
+![GitHub last commit](https://img.shields.io/github/last-commit/ilham168/crud-barang)
+![GitHub issues](https://img.shields.io/github/issues/ilham168/crud-barang)
+![GitHub stars](https://img.shields.io/github/stars/ilham168/crud-barang?style=social)
+
+Aplikasi **CRUD Barang** ini dibuat menggunakan framework **Laravel** untuk mengelola data barang.  
+Fitur CRUD mencakup menambah, melihat, mengubah, dan menghapus data barang dengan mudah.
+
+---
+
+## 🚀 Fitur Aplikasi
+- Create – tambah data barang  
+- Read – menampilkan daftar barang  
+- Update – mengedit data barang  
+- Delete – menghapus data barang  
+- Validasi input  
+- Struktur kode sederhana untuk praktikum
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+- PHP 8+
+- Laravel 10
+- MySQL / MariaDB
+- Blade Template Engine
+
+---
+
+## 🧩 Diagram Alur CRUD
+
+```mermaid
+flowchart TD
+    A[User] --> B[Halaman Barang]
+    B --> |Tambah| C[Form Create]
+    C --> D[Simpan ke Database]
+
+    B --> |Edit| E[Form Edit]
+    E --> F[Update Database]
+
+    B --> |Hapus| G[Delete Data]
+    G --> B
+
+    D --> B
+    F --> B
+```
+
+---
+
+## 📁 Struktur Folder
+```
+app/
+ ├── Models/Barang.php
+ └── Http/Controllers/BarangController.php
+resources/
+ └── views/barang/
+routes/
+ └── web.php
+database/
+ └── migrations/
+```
+
+---
+
+## ⚙️ Cara Instalasi
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/ilham168/crud-barang.git
+cd crud-barang
+```
+
+### 2. Install Dependency
+```bash
+composer install
+```
+
+### 3. Copy File .env
+```bash
+cp .env.example .env
+```
+
+Atur database:
+```
+DB_DATABASE=crud_barang
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 4. Generate App Key
+```bash
+php artisan key:generate
+```
+
+### 5. Migrasi Database
+```bash
+php artisan migrate
+```
+
+### 6. Jalankan Server
+```bash
+php artisan serve
+```
+
+Akses aplikasi:
+```
+http://localhost:8000
+```
+
+---
+
+## 📸 Screenshot Aplikasi
+
+### **1. Halaman Daftar Barang**
+![Tampilan Index](public/screenshots/index.png)
+
+### **2. Form Tambah Barang**
+![Form Create](public/screenshots/create.png)
+
+### **3. Form Edit Barang**
+![Form Edit](public/screenshots/edit.png)
+
+> 📝 *Catatan:*  
+> Letakkan gambar screenshot di folder:  
+> ```
+> public/screenshots/
+> ```  
+> dengan nama file sesuai contoh.
+
+---
+
+## 🧪 Contoh Output (Teks)
+
+### **Daftar Barang**
+```
+ID | Nama Barang | Harga | Jumlah | Aksi
+-----------------------------------------
+1  | Pulpen       | 5000  | 10     | Edit | Hapus
+2  | Buku Tulis   | 8000  | 5      | Edit | Hapus
+```
+
+---
+
+
