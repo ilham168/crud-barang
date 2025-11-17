@@ -170,26 +170,6 @@ http://localhost:8000
 
 ---
 
-## 📸 Screenshot Aplikasi
-
-### **1. Halaman Daftar Barang**
-![Tampilan Index](public/screenshots/index.png)
-
-### **2. Form Tambah Barang**
-![Form Create](public/screenshots/create.png)
-
-### **3. Form Edit Barang**
-![Form Edit](public/screenshots/edit.png)
-
-> 📝 *Catatan:*  
-> Letakkan gambar screenshot di folder:  
-> ```
-> public/screenshots/
-> ```  
-> dengan nama file sesuai contoh.
-
----
-
 ## 🧪 Contoh Output (Teks)
 
 ### **Daftar Barang**
